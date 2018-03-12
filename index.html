@@ -14,7 +14,7 @@
   <title>Travelville</title>
 </head>
 
-<body>
+<body id="home" class="scrollspy">
   <div class="navbar-fixed">
     <nav class="teal darker-4">
       <div class="nav-wrapper">
@@ -96,7 +96,7 @@
   </section>
 
   <!-- Section Search -->
-  <section class="section section-search teal darken-1 white-text center">
+  <section id="search" class="section section-search teal darken-1 white-text center scrollspy">
     <div class="container">
       <div class="row">
         <div class="col s12">
@@ -139,7 +139,7 @@
   </section>
 
   <!-- Section: Popular Section -->
-  <div class="section section-popular">
+  <section id="popular" class="section section-popular scrollspy">
     <div class="container">
       <div class="row">
         <h4 class="center">
@@ -186,7 +186,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Section: Follow -->
   <div class="section section-follow teal darken-2 white-text center">
@@ -218,7 +218,7 @@
 
 
   <!-- Section: Gallery -->
-  <section class="section section-gallery">
+  <section id="gallery" class="section section-gallery scrollspy">
     <div class="container">
       <h4 class="center">
         <span class="teal-text">Photo</span> Gallery
@@ -268,6 +268,57 @@
     </div>
   </section>
 
+  <!-- Section: Contact -->
+
+  <section id="contact" class="section section-contact scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card-panel teal white-text center">
+            <i class="material-icons medium">email</i>
+            <h5>Contact us for booking</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor laborum fugit incidunt neque voluptas corporis
+              deserunt tempora quas possimus! Neque!</p>
+          </div>
+          <ul class="collection with-header">
+            <li class="collection-header">
+              <h4>Location</h4>
+            </li>
+            <li class="collection-item">Travelville Agency</li>
+            <li class="collection-item">555 Beach rd, Suite 33</li>
+            <li class="collection-item">Miami, FL 555555</li>
+          </ul>
+        </div>
+        <div class="col s12 m6">
+          <div class="card-panel grey lighten-3">
+            <h6>Please fill out this form</h6>
+            <div class="input-field">
+              <input type="text" id="name" placeholder="Name">
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field">
+              <input type="email" id="email" placeholder="Email">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="phone" placeholder="Phone">
+              <label for="phone">Phone</label>
+            </div>
+            <div class="input-field">
+              <textarea class="materialize-textarea" id="msg" placeholder="Enter messagge"></textarea>
+              <label for="msg">Messagge</label>
+            </div>
+            <input type="submit" value="submit" class="btn">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Footer -->
+  <footer class="section teal darken-2 white-text center">
+    <p class="flow-text">Travelville &copy; 2018</p>
+  </footer>
 
   <!-- Import jQuery before materialize.js -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -300,7 +351,8 @@
           "Hawai": null
         }
       });
-
+      //Init Scrollspy
+      $('.scrollspy').scrollSpy();
     });
   </script>
 </body>
